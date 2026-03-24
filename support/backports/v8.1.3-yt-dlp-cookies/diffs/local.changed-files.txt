@@ -1,0 +1,10 @@
+config/default.yaml
+config/production.yaml.example
+dist/core/helpers/youtube-dl/youtube-dl-cli.js
+dist/core/helpers/youtube-dl/youtube-dl-cli.js.map
+dist/core/initializers/checker-before-init.js
+dist/core/initializers/checker-before-init.js.map
+dist/core/initializers/config.js
+dist/core/initializers/config.js.map
+dist/server.js
+dist/server.js.map

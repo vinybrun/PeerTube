@@ -1,0 +1,11 @@
+app/config/default.yaml
+app/dist/core/helpers/youtube-dl/youtube-dl-cli.js
+app/dist/core/helpers/youtube-dl/youtube-dl-cli.js.map
+app/dist/core/initializers/checker-before-init.js
+app/dist/core/initializers/checker-before-init.js.map
+app/dist/core/initializers/config.js
+app/dist/core/initializers/config.js.map
+app/dist/server.js
+app/dist/server.js.map
+app/support/docker/production/config/custom-environment-variables.yaml
+app/support/docker/production/config/production.yaml

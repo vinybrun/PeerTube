@@ -1,0 +1,75 @@
+# Check config/production.yaml.example in PeerTube repository for more details/available configuration
+
+listen:
+  hostname: '0.0.0.0'
+  port: 9000
+
+webserver:
+  https: true
+  hostname: undefined
+  port: 443
+
+rates_limit:
+  login:
+    window: 5 minutes
+    max: 15
+  ask_send_email:
+    window: 5 minutes
+    max: 3
+
+trust_proxy:
+  - 'loopback'
+  - 'linklocal'
+  - 'uniquelocal'
+
+database:
+  hostname: 'postgres'
+  port: 5432
+  ssl: false
+  suffix: ''
+  username: 'postgres'
+  password: 'postgres'
+
+redis:
+  hostname: 'redis'
+  port: 6379
+  auth: null
+
+# From the project root directory
+storage:
+  tmp: '../data/tmp/'
+  tmp_persistent: '../data/tmp-persistent/'
+  bin: '../data/bin/'
+  avatars: '../data/avatars/'
+  web_videos: '../data/web-videos/'
+  streaming_playlists: '../data/streaming-playlists'
+  original_video_files: '../data/original-video-files'
+  redundancy: '../data/redundancy/'
+  logs: '../data/logs/'
+  previews: '../data/previews/'
+  thumbnails: '../data/thumbnails/'
+  storyboards: '../data/storyboards/'
+  torrents: '../data/torrents/'
+  captions: '../data/captions/'
+  cache: '../data/cache/'
+  import: '../data/import/'
+  plugins: '../data/plugins/'
+  uploads: '../data/uploads/'
+  well_known: '../data/well-known/'
+  client_overrides: '../data/client-overrides/'
+
+
+object_storage:
+  upload_acl:
+    public: null # Set to null here because we can't using env variables
+    private: null
+
+log:
+  level: 'info'
+
+tracker:
+  enabled: true
+  reject_too_many_announces: false # false because we have issues with docker ws ip/port forwarding
+
+admin:
+  email: null
