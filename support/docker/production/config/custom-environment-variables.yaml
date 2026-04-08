@@ -59,9 +59,6 @@ smtp:
     __format: "json"
   from_address: "PEERTUBE_SMTP_FROM"
 
-storage:
-  import: "PEERTUBE_STORAGE_IMPORT"
-
 object_storage:
   enabled:
     __name: "PEERTUBE_OBJECT_STORAGE_ENABLED"
